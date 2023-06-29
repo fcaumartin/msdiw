@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #boite {
+            position: absolute;
+            left: 0px;
+            width: 400px;
+            height: 100px;
+            background-color: red;
+            overflow: hidden;
+
+            transition-property: left, background-color, transform;
+            transition-duration: 2s, 2s, 2s; 
+
+
+
+            /* transition-timing-function: ease; */
+            /* transition-delay: 5s; */ 
+
+            /* transition: width 2s ease 0s; */
+        }
+
+        #boite:hover {
+            /* width: 400px; */
+            background-color: blue;
+            transform: scale(1.2);
+            left: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="boite">
+        Bonjour Monsieur
+    </div>
+    
+</body>
+</html>

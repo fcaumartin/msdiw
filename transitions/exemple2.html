@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #boite {
+            position: absolute;
+
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            overflow: hidden;
+
+            animation: bouge_de_la 6s ease infinite alternate;
+        }
+
+        @keyframes bouge_de_la {
+            
+            0% {
+                left: 0px;
+                top: 0px;
+                background-color: red;
+            }
+            25% {
+                left: 400px;
+                top: 0px;
+                background-color: blue;
+                
+            }
+            50% {
+                left: 400px;
+                top: 400px;
+                background-color: green;
+                transform: scale(2);
+            }
+            75% {
+                left: 0px;
+                top: 400px;
+                background-color: palegoldenrod;
+            }
+            100% {
+                left: 0px;
+                top: 0px;
+                background-color: red;
+            }
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div id="boite">
+        <input type="text" placeholder="Bon courage !!!">
+    </div>
+    
+</body>
+</html>
